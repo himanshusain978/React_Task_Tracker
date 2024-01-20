@@ -27,7 +27,7 @@ const App = () => {
   }, [tasks]);
 
   return (
-    <div className=' bg-gray-400 flex justify-center items-center text-slate-400 min-h-screen'>
+    <div className=' bg-gray-400 flex justify-center items-center text-slate-400 min-h-screen p-2'>
       <div className='flex flex-col border-4 p-2 rounded-xl border-indigo-700 bg-slate-800 '>
         <h1 className='flex justify-center items-center text-red-900 text-3xl p-2'>Task Tracker</h1>
         <TaskForm onAdd={addTask} />

@@ -5,7 +5,7 @@ import { FcCheckmark } from "react-icons/fc";
 import { HiXMark } from "react-icons/hi2";
 const TaskItem = ({ task, onDelete, onToggle }) => {
   return (
-    <div className={`flex border-2 border-orange-500 rounded-lg m-2 p-1 gap-2 bg-gray-600 ${task.completed ? ' bg-slate-900' : ''}`}>
+    <div className={`flex border-2 border-orange-500 rounded-lg m-2 p-1 gap-2 bg-gray-600 justify-between ${task.completed ? ' bg-slate-900' : ''}`}>
         <div className={`flex flex-col  `}>
             <h3 className=' text-red-400 text-2xl' style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
             {task.name}
